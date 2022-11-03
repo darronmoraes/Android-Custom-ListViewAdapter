@@ -28,6 +28,12 @@ public class MainActivity extends AppCompatActivity {
         Person welkin = new Person("Welkin Moraes", "14-12-1996", "Male");
         Person mayron = new Person("Mayron Gomes", "14-12-1996", "Male");
         Person chrisene = new Person("Chrisene Oliveira", "12-11-2000", "Female");
+        Person allister = new Person("Allister Lopes", "14-12-1996", "Male");
+        Person girish = new Person("Girish Suroji", "14-12-1996", "Male");
+        Person vivek = new Person("Vivek Naik", "12-11-2000", "Female");
+        Person darshan = new Person("Darshan Dessai", "14-12-1996", "Male");
+        Person karthik = new Person("Karthik Faldessai", "14-12-1996", "Male");
+        Person sejal = new Person("Sejal Gawde", "12-11-2000", "Female");
 
         // Create ArrayList<People>
         ArrayList<Person> peopleList = new ArrayList<>();
@@ -37,6 +43,12 @@ public class MainActivity extends AppCompatActivity {
         peopleList.add(welkin);
         peopleList.add(mayron);
         peopleList.add(chrisene);
+        peopleList.add(allister);
+        peopleList.add(girish);
+        peopleList.add(vivek);
+        peopleList.add(darshan);
+        peopleList.add(karthik);
+        peopleList.add(sejal);
 
         PersonListAdapter adapter = new PersonListAdapter(this, R.layout.adapter_list_view, peopleList);
         peopleListView.setAdapter(adapter);
